@@ -15,15 +15,15 @@ public class LoginPage {
 		ldriver=rdriver;
 		PageFactory.initElements(rdriver, this);
 	}
-	@FindBy(name="username")
+	@FindBy(xpath="//input[@name='username']")
 	@CacheLookup
 	WebElement txtUserName;
 	
-	@FindBy(name="password")
+	@FindBy(xpath="//input[@name='password']")
 	@CacheLookup
 	WebElement txtPassword;
 	
-	@FindBy(className ="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button")
+	@FindBy(xpath="//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
 	@CacheLookup
 	WebElement btnLogin;
 	

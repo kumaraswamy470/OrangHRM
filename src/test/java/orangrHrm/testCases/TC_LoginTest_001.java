@@ -27,7 +27,7 @@ public class TC_LoginTest_001 extends BaseClass
     lp.submit();
     logger.info("click on submitted");
     Thread.sleep(10000);
-	if(driver.getTitle().equalsIgnoreCase("Dashboard"))
+	if(driver.getTitle().equalsIgnoreCase("OrangeHrm"))
 	{
 	Assert.assertTrue(true); 
 	logger.info("Login test passed");
@@ -38,4 +38,7 @@ public class TC_LoginTest_001 extends BaseClass
 		logger.info("Login test failed");
 	}
 }
+	
+
+	
 }
